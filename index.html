@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style2.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <audio id="idAudio" autoplay loop>
+    <source src="videos/sound.mp3" type="audio/mp3">
+  </audio>
+
+  <a href="html/main.html">
+  <button onclick="play_Audio()" role="button">
+    <script>
+      var audio=document.createElement('audio');
+ var first=true;
+      window.addEventListener('mousedown',onmousedown);
+ 
+    function onmousedown(){
+       if(!first) return;
+       first=false;
+       audio.src="videos/sound.mp3";
+       audio.play();
+    }
+  </script>
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span> Come In
+
+  </button>
+  </a>
+</body>
+
+</html>
